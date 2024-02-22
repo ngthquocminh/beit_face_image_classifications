@@ -1,0 +1,152 @@
+:root {
+  --yello: #ffd61e;
+}
+
+
+
+body {
+  background-color: antiquewhite;
+}
+
+.App-header {
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: var(--yello);
+  color:  rgb(36, 36, 36);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.App-body {
+  margin-top: 150px;
+}
+
+.App-body .body-container {
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 1000px
+}
+.App-body .main-panel {
+  margin: 50px 100px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.App-body .main-panel .uploader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid  var(--yello);
+  border-radius: 4px;
+}
+.App-body .main-panel .uploader .file-name-display {
+  padding: 10px 15px;
+  height: 20px;
+  font-size: 14px;
+  color: gray;
+}
+.App-body .main-panel .uploader .choose-file-button {
+  background-color: var(--yello);;
+  padding: 10px 15px;
+  height: 20px;
+}
+.App-body .main-panel .uploader .choose-file-button > label {
+  font-size: 15px;
+}
+.App-body .main-panel .uploader .choose-file-button > label:hover {
+  cursor: pointer;
+}
+
+.functions {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.functions .function-button {
+  padding: 5px 20px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+
+
+.functions .function-button:hover { 
+  cursor: pointer;
+}
+
+.translate-button {
+  background-color: #fcba03;
+}
+
+.transcribe-button {
+  background-color: #b2dd61;
+}
+
+
+.output {
+  margin-top: 30px;
+  font-size: 13px;
+  color: rgb(121, 121, 121);
+}
+
+
+.notification {
+  position: relative;
+}
+
+.notification .overlay {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000060;
+  z-index: 1000;
+}
+
+.notification .overlay .loading { 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  color: gray;
+  padding-left: 30px;
+  padding-right: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px gray;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mode-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mode-switcher > .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mode-title {
+  width: 300px;
+}
+
+.openai-key-input > input {
+  height: 30px;
+  border: 1px solid #62b5b1;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: 300px;
+}
