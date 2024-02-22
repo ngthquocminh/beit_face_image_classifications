@@ -62,7 +62,7 @@ function App() {
           BEIT
         </h1>
         <p>
-          CHECK FACE IMAGE
+        LIVENESS DETECTION
         </p>
       </header>
       <section className="App-body">
@@ -82,7 +82,7 @@ function App() {
                     onChange={handleUploadImageFile}
                     id="select-image-file"
                     name="filename"
-                    accept=".png"
+                    accept=".png, .jpg, .gpeg"
                     hidden/>
                 </div>
               </div>
