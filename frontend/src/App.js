@@ -69,24 +69,27 @@ function App() {
         <div className="body-container">
           <div className="main-panel">
             <div className="panel-inside">
-              <div className='uploader'>
-                <div className='file-name-display'>{imageFile ? imageFile.name : ""}</div>
-                <div className="choose-file-button">
-                  <label
-                    htmlFor="select-image-file"
-                    className="">
-                    Select Image
-                  </label>
-                  <input
-                    type="file"
-                    onChange={handleUploadImageFile}
-                    id="select-image-file"
-                    name="filename"
-                    accept=".png, .jpg, .gpeg"
-                    hidden/>
+              <div className='col'>
+                <div className='uploader'>
+                    <label
+                      htmlFor="select-image-file"
+                      className="">
+                      Select Image
+                    </label>
+                    <input
+                      type="file"
+                      onChange={handleUploadImageFile}
+                      id="select-image-file"
+                      name="filename"
+                      accept=".png, .jpg, .gpeg"
+                      hidden/>
                 </div>
+                {/* <div className='file-name-display'>{imageFile ? imageFile.name : ""}</div> */}
+                { imageFile ? <img src={URL.createObjectURL(imageFile)}/> : ""}
               </div>
-              {output && <div className='output'><b>Output:</b>&nbsp; {output}</div> }
+              <div className='col'>
+                {output && <div className='output'><b>Output:</b>&nbsp; {output}</div> }
+              </div>
             </div>
           </div>
         </div>

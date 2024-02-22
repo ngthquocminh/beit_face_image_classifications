@@ -30,34 +30,48 @@ body {
   width: 1000px
 }
 .App-body .main-panel {
-  margin: 50px 100px;
+  margin: 50px 300px;
   padding: 30px;
   border-radius: 10px;
   background-color: white;
+  min-width: 300px;
+}
+.panel-inside {
+  display: flex;
+  flex-direction: column;
+}
+.panel-inside > .col {
+  width: 50%;
+}
+.panel-inside .col img {
+  height: 320px
 }
 
 .App-body .main-panel .uploader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid  var(--yello);
-  border-radius: 4px;
+  margin-bottom: 20px;
 }
 .App-body .main-panel .uploader .file-name-display {
   padding: 10px 15px;
   height: 20px;
   font-size: 14px;
   color: gray;
+
 }
-.App-body .main-panel .uploader .choose-file-button {
+.App-body .main-panel .uploader{
+
+}
+.App-body .main-panel .uploader > label {
+  font-size: 15px;
   background-color: var(--yello);;
   padding: 10px 15px;
   height: 20px;
+  border-radius: 10px;
 }
-.App-body .main-panel .uploader .choose-file-button > label {
-  font-size: 15px;
-}
-.App-body .main-panel .uploader .choose-file-button > label:hover {
+
+.App-body .main-panel .uploader label:hover {
   cursor: pointer;
 }
 
